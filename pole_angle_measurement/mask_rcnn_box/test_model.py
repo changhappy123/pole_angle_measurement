@@ -31,7 +31,7 @@ from mrcnn import visualize
 
 # Directory to save logs and trained model
 MODEL_DIR = os.path.join(ROOT_DIR, "logs")
-MODEL_WEIGHT = 'resnet101_640x640/mask_rcnn_shapes_0040.h5'
+MODEL_WEIGHT = 'mask_rcnn_shapes_0040.h5'
 MODEL_WEIGHT = os.path.join(MODEL_DIR, MODEL_WEIGHT)
 
 """
