@@ -12,7 +12,7 @@ This is an implementation of utility pole angle measurement on Python 3, Keras2.
 At present, we support the training and testing of the model, as well as the detection results of the 2d detector, the segmentation results of the 3D detector and the tilt angle in the camera coordinate system (under the apollospace dataset).
 # Training
 Download pre-trained COCO weights (mask_rcnn_coco.h5)
-
+Download [ApolloSpace](https://apolloscape.auto/) datasets
 
 # Evaluation
 Download pre-trained COCO weights (mask_rcnn_coco.h5)
