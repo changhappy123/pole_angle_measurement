@@ -11,13 +11,21 @@ This is an implementation of utility pole angle measurement on Python 3, Keras2.
 # Usage
 At present, we support the training and testing of the model, as well as the detection results of the 2d detector, the segmentation results of the 3D detector and the tilt angle in the camera coordinate system (under the apollospace dataset).
 # Training
-Download pre-trained COCO weights (mask_rcnn_coco.h5)
+Download pre-trained COCO weights ([mask_rcnn_coco.h5](https://github.com/matterport/Mask_RCNN/releases))  
 Download [ApolloSpace](https://apolloscape.auto/) datasets
+The image segmentation and point cloud segmentation models in this model are trained separately  
+When training the image segmentation model, the training data set folder needs to be provided. The pictures are labeled with Labelme software, and the file format after labeling is as follows:  
+|--label  
+|    |----cv2_mask  
+|    |----json  
+|    |----labelme_json  
+|    |----pic  
+When training the point cloud segmentation model, download the prepared HDF5 file or prepare it yourself, then n pole_ angle_ measurement/pole_pointnet file start the training:  
+     python train.py --log_dir log2 --test_area 2
 
 # Evaluation
-Download pre-trained COCO weights (mask_rcnn_coco.h5)
-
-
+Prepare the dataset parameters（mask_rcnn_box/logs/mask_rcnn_shapes_0040.h5 and pole_pointnet/log2/model.ckpt） of the pre-training to test：  
+     python inference.py  
 # References
 PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation by Qi et al. (CVPR 2017 Oral Presentation).   
 PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space by Qi et al. (NIPS 2017).   
