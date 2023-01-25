@@ -9,7 +9,7 @@ This is an implementation of utility pole angle measurement on Python 3, Keras, 
 # Training
 # Evaluation
 # References
-PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation by Qi et al. (CVPR 2017 Oral Presentation).
-PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space by Qi et al. (NIPS 2017). 
-Mask R-CNN:
+PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation by Qi et al. (CVPR 2017 Oral Presentation).   
+PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space by Qi et al. (NIPS 2017).   
+Mask R-CNN:  
 Frustum PointNet:
