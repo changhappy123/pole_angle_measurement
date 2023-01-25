@@ -12,7 +12,7 @@ This is an implementation of utility pole angle measurement on Python 3, Keras2.
 At present, we support the training and testing of the model, as well as the detection results of the 2d detector, the segmentation results of the 3D detector and the tilt angle in the camera coordinate system (under the apollospace dataset).
 # Training
 Download pre-trained COCO weights ([mask_rcnn_coco.h5](https://github.com/matterport/Mask_RCNN/releases))  
-Download [ApolloSpace](https://apolloscape.auto/) datasets
+Download [ApolloScape](https://apolloscape.auto/) datasets
 The image segmentation and point cloud segmentation models in this model are trained separately  
 When training the image segmentation model, the training data set folder needs to be provided. The pictures are labeled with Labelme software, and the file format after labeling is as follows:  
 |--label  
@@ -24,13 +24,13 @@ When training the point cloud segmentation model, download the prepared HDF5 fil
      python train.py --log_dir log2 --test_area 2
 
 # Evaluation
-Prepare the dataset parameters（mask_rcnn_box/logs/mask_rcnn_shapes_0040.h5 and pole_pointnet/log2/model.ckpt） of the pre-training to test：  
+Prepare pre-training parameter file（mask_rcnn_box/logs/mask_rcnn_shapes_0040.h5 and pole_pointnet/log2/model.ckpt） to test：  
      python inference.py  
 # References
-PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation by Qi et al. (CVPR 2017 Oral Presentation).   
-PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space by Qi et al. (NIPS 2017).   
-Mask R-CNN  
-Frustum PointNet: Frustum PointNets for 3D Object Detection from RGB-D Data  
-ApolloSpace: The ApolloScape Dataset for Autonomous Driving
+[PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation by Qi et al. (CVPR 2017 Oral Presentation)](http://stanford.edu/~rqi/pointnet/).   
+[PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space by Qi et al. (NIPS 2017).](https://proceedings.neurips.cc/paper/2017/hash/d8bf84be3800d12f74d8b05e9b89836f-Abstract.html)   
+[Mask R-CNN](https://openaccess.thecvf.com/content_ICCV_2017/papers/He_Mask_R-CNN_ICCV_2017_paper.pdf)  
+[Frustum PointNet: Frustum PointNets for 3D Object Detection from RGB-D Data](https://openaccess.thecvf.com/content_cvpr_2018/papers/Qi_Frustum_PointNets_for_CVPR_2018_paper.pdf)  
+[ApolloScape: The ApolloScape Dataset for Autonomous Driving](https://openaccess.thecvf.com/content_cvpr_2018_workshops/w14/html/Huang_The_ApolloScape_Dataset_CVPR_2018_paper.html)
 
 
