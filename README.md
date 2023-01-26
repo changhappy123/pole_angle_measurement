@@ -13,7 +13,7 @@ At present, we support the training and testing of the model, as well as the det
 # Training
 Download pre-trained COCO weights ([mask_rcnn_coco.h5](https://github.com/matterport/Mask_RCNN/releases))  
 Download [ApolloScape](https://apolloscape.auto/) datasets
-The image segmentation and point cloud segmentation models in this model are trained separately  
+The image segmentation and point cloud segmentation models in this model are trained separately.    
 When training the image segmentation model, the training data set folder needs to be provided. The pictures are labeled with Labelme software, and the file format after labeling is as follows:  
 |--label  
 |    |----cv2_mask  
