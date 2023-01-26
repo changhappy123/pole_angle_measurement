@@ -20,7 +20,7 @@ When training the image segmentation model, the training data set folder needs t
 |    |----json  
 |    |----labelme_json  
 |    |----pic  
-When training the point cloud segmentation model, download the prepared HDF5 file or prepare it yourself, then n pole_ angle_ measurement/pole_pointnet file start the training:  
+When training the point cloud segmentation model, download the prepared HDF5 file or prepare it yourself, then in pole_ angle_ measurement/pole_pointnet file start the training:  
      python train.py --log_dir log2 --test_area 2
 
 # Evaluation
